@@ -3,27 +3,28 @@ c语言推理lenet卷积神经网络
 验证可用于工业玻璃划痕视觉检测
 /******************************************************************************************************************/
   各层参数
-	net=torch.nn.Sequential(
-	nn.Conv2d(1,6,kernel_size=5,padding=0),nn.ReLU(),
-	nn.MaxPool2d(kernel_size=2,stride=2),
-	nn.Conv2d(6,16,kernel_size=5,padding=0),nn.ReLU(),
-	nn.MaxPool2d(kernel_size=2,stride=2),nn.Flatten(),
-	nn.Linear(256,120),nn.ReLU(),
-	nn.Linear(120,84),nn.ReLU(),
-	nn.Linear(84,10)
-	各层输出
-	Conv2d output shape:	 torch.Size([1, 6, 24, 24])
-	ReLU output shape:		 torch.Size([1, 6, 24, 24])
-	MaxPool2d output shape:	 torch.Size([1, 6, 12, 12])
-	Conv2d output shape:	 torch.Size([1, 16, 8, 8])
-	ReLU output shape:		 torch.Size([1, 16, 8, 8])
-	MaxPool2d output shape:	 torch.Size([1, 16, 4, 4])
-	Flatten output shape:	 torch.Size([1, 256])
-	Linear output shape:	 torch.Size([1, 120])
-	ReLU output shape:		 torch.Size([1, 120])
-	Linear output shape:	 torch.Size([1, 84])
-	ReLU output shape:		 torch.Size([1, 84])
-	Linear output shape:	 torch.Size([1, 10])
+net=torch.nn.Sequential(
+nn.Conv2d(1,6,kernel_size=5,padding=0),nn.ReLU(),
+nn.MaxPool2d(kernel_size=2,stride=2),
+nn.Conv2d(6,16,kernel_size=5,padding=0),nn.ReLU(),
+nn.MaxPool2d(kernel_size=2,stride=2),nn.Flatten(),
+nn.Linear(256,120),nn.ReLU(),
+nn.Linear(120,84),nn.ReLU(),
+nn.Linear(84,10)
+
+各层输出
+Conv2d output shape:	 torch.Size([1, 6, 24, 24])
+ReLU output shape:		 torch.Size([1, 6, 24, 24])
+MaxPool2d output shape:	 torch.Size([1, 6, 12, 12])
+Conv2d output shape:	 torch.Size([1, 16, 8, 8])
+ReLU output shape:		 torch.Size([1, 16, 8, 8])
+MaxPool2d output shape:	 torch.Size([1, 16, 4, 4])
+Flatten output shape:	 torch.Size([1, 256])
+Linear output shape:	 torch.Size([1, 120])
+ReLU output shape:		 torch.Size([1, 120])
+Linear output shape:	 torch.Size([1, 84])
+ReLU output shape:		 torch.Size([1, 84])
+Linear output shape:	 torch.Size([1, 10])
 /******************************************************************************************************************/
 pytorch结果展示
 
