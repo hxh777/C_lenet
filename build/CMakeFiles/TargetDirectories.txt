@@ -1,0 +1,3 @@
+/home/hispark/code/C_code/lenet/build/CMakeFiles/edit_cache.dir
+/home/hispark/code/C_code/lenet/build/CMakeFiles/rebuild_cache.dir
+/home/hispark/code/C_code/lenet/build/CMakeFiles/lenet.dir
